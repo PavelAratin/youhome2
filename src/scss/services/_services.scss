@@ -29,7 +29,7 @@
       transition: all 0.2s linear;
     }
     &:hover .accordeon__pic {
-      background-image: url("../../img/arrow-down-red.png");
+      background-image: url("../img/arrow-down-red.png");
     }
   }
   &__left {
@@ -64,7 +64,7 @@
     justify-content: center;
     width: 24px;
     height: 24px;
-    background-image: url("../../img/arrow_down.png");
+    background-image: url("../img/arrow_down.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -83,8 +83,8 @@
   border-top-color: #c5c5c5;
 }
 .js-active-accordeon .accordeon__pic {
-  background-image: url("../../img/close.png");
+  background-image: url("../img/close.png");
 }
 .js-active-accordeon:hover .accordeon__pic {
-  background-image: url("../../img/close-red.png");
+  background-image: url("../img/close-red.png");
 }

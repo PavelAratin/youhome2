@@ -19,14 +19,14 @@
   border: none;
   width: 40px;
   height: 40px;
-  background-image: url("../../img/burger_icon.png");
+  background-image: url("../img/burger_icon.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   transition: all 0.3s linear;
   display: none;
   &:hover {
-    background-image: url("../../img/close_burger.png");
+    background-image: url("../img/close_burger.png");
   }
 }
 @keyframes go {

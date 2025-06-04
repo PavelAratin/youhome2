@@ -10,7 +10,7 @@
     padding-bottom: 130px;
   }
   &__container {
-    background-image: url("../../img/form_img.png");
+    background-image: url("../img/form_img.png");
     background-repeat: no-repeat;
     background-position: right top 200px;
   }
@@ -87,7 +87,7 @@
 
 /* Стиль при выборе */
 .custom-checkbox .js-chek:checked + .checkbox-icon {
-  background-image: url("../../img/checkbox.png");
+  background-image: url("../img/checkbox.png");
   background-position: center center;
   background-repeat: no-repeat;
 }
