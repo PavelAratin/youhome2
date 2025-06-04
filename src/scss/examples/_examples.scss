@@ -1,0 +1,38 @@
+.examples {
+  padding-bottom: 125px;
+  &__title-h2 {
+    margin-bottom: 60px;
+  }
+  .swiper {
+    margin-bottom: 60px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+.slider-buttons {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  &__button {
+    border: 1px solid $ColorSvetloServy;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: border-color 0.2s linear;
+    &:hover {
+      border-color: $ColorKrasnyy; /* Цвет при наведении (оранжевый) */
+    }
+    &:hover path {
+      fill: $ColorKrasnyy; /* Цвет при наведении (оранжевый) */
+      transition: all 0.2s linear;
+    }
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

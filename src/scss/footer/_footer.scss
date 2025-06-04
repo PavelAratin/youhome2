@@ -1,0 +1,39 @@
+.footer {
+  background-color: $ColorKrasnyy;
+  padding: 80px 0;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Авто-ширина + свободное место */
+    gap: 10px;
+  }
+  &__nav {
+    color: $ColorBelyy;
+    grid-column: span 1;
+    align-self: center;
+    .nav__link:hover {
+      color: $ColorBelyy;
+    }
+  }
+  &__nav--contacts {
+    grid-column: span 2;
+  }
+  .nav__link,
+  .nav__adress {
+    font-size: 14px;
+  }
+  .nav__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav__item {
+    width: 100%;
+  }
+}
+.social {
+  display: flex;
+  align-items: flex-end;
+  grid-column: -3;
+  &__item:not(:last-child) {
+    margin-right: 28px;
+  }
+}

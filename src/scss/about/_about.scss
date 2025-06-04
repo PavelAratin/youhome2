@@ -1,0 +1,28 @@
+.about {
+  padding-top: 122px;
+  padding-bottom: 200px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__left {
+    flex-shrink: 1;
+  }
+  &__right {
+    flex-shrink: 2;
+    max-width: 540px;
+  }
+  &__description {
+    margin-bottom: 13px;
+  }
+  &__title-h2 {
+    margin-bottom: 28px;
+  }
+  &__img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}

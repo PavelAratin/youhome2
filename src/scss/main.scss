@@ -1,0 +1,12 @@
+//пример импорта scss файла
+@import "variables";
+@import "fonts";
+@import "setting";
+@import "./header/header";
+@import "./hero/hero";
+@import "./about/about";
+@import "./services/services";
+@import "./examples/examples";
+@import "./feedback/feedback";
+@import "./footer/footer";
+@import "media";

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ремонт квартир и санузлов под ключ в Красноярске. Качественные отделочные работы, дизайн-проекты и гарантия результата. Звоните!">
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./swiper/swiper.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <title>Ремонт квартир под ключ в Красноярске | YOUHOME</title>
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a class="logo" href="#">
+      <img src="../img/logo.png" alt="Лого">
+    </a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link js-footer-nav-link" href="#" data-section="about">
+            о нас
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link js-footer-nav-link" href="#" data-section="our-services">
+            услуги
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link js-footer-nav-link" href="#" data-section="examples-work">
+            наши работы
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="tel:+79135593064">
+            +7 (913) 559 30 64
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="tel:+79131991719">
+            +7 (913) 199 17 19
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="burger js-burger"></button>
+  </div>
+  <div class="mobile-menu js-mobile-menu">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link js-footer-nav-link" href="#" data-section="about">
+            о нас
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link js-footer-nav-link" href="#" data-section="our-services">
+            услуги
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link js-footer-nav-link" href="#" data-section="examples-work">
+            наши работы
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="tel:+79135593064">
+            +7 (913) 559 30 64
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <main>
+      <div class="bg bg--hero bg--relative">
+  <section class="hero">
+    <div class="container hero__container">
+      <div class="hero__left">
+        <h1 class="title-h1 hero__title">Ремонт,<br> в котором <span class="red-text">вам уютно</span></h1>
+        <p class="description hero__description">Квартиры под ключ и отдельные виды работ
+          с вниманием к деталям и вашим желаниям</p>
+        <div class="buttons">
+          <button class="button button--red js-button-tofeedback" data-section="feedback">Оформить заявку</button>
+          <button class="button js-button-toservices" data-section="our-services">Узнать больше</button>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="swiper hero__swiper js-swiper-hero">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="hero__img" src="../img/hero_image_1.jpg" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+              <img class="hero__img" src="../img/hero_image_2.jpg" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+              <img class="hero__img" src="../img/hero_image_1.jpg" alt="Картинка">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+      <div class="bg bg--about js-about">
+  <section class="about">
+    <div class="container about__container">
+      <div class="about__left">
+        <img class="about__img" src="../img/about_img.jpg" alt="Картинка">
+      </div>
+      <div class="about__right">
+        <h2 class="title-h2 about__title-h2">о <span class="red-text">нас</span></h2>
+        <p class="description about__description">Мы помогаем создать <span class="red-text">уют и комфорт</span><br>
+          в вашем доме или офисе</p>
+        <p class="description"><span class="red-text">YOUHOME</span> — это <span class="red-text">команда
+            профессионалов,</span> которая превращает
+          пожелания клиентов
+          в <span class="red-text">готовый результат</span></p>
+      </div>
+    </div>
+  </section>
+</div>
+      <section class="services js-our-services">
+  <div class="container">
+    <h2 class="title-h2 services__title-h2">Наши <br><span class="red-text">услуги</span></h2>
+    <ul class="accordeon js-accordeon">
+      <li class="accordeon__item js-accordeon-item">
+        <div class="accordeon__left">
+          <h3 class="title-h3 services__title-h3">Замер площади</h3>
+          <span class="accordeon__cost">[бесплатно]</span>
+        </div>
+        <div class="accordeon__middle">
+          <p class="description services__description">
+            Замер площади — <span class="red-text">основа точного ремонта.</span>
+          </p>
+          <p class="description services__description"> Специалист <span class="red-text">YouHome</span> приедет
+            в удобное время, проведёт точные замеры лазерным оборудованием и зафиксирует все нюансы. <span
+              class="red-text">Без погрешностей,
+              переделок и лишних трат.</span></p>
+          <p class="description services__description">Точный замер — <span class="red-text">экономия
+              и уверенность</span> c первого шага.</p>
+        </div>
+        <div class="accordeon__right">
+          <img class="accordeon__img" src="../img/accordeon_img_1.png" alt="Картинка">
+          <span class="accordeon__pic">
+          </span>
+        </div>
+      </li>
+      <li class="accordeon__item js-accordeon-item">
+        <div class="accordeon__left">
+          <h3 class="title-h3 services__title-h3">Замер площади</h3>
+          <span class="accordeon__cost">[бесплатно]</span>
+        </div>
+        <div class="accordeon__middle">
+          <p class="description services__description">
+            В <span class="red-text">YouHome</span> мы не гадаем «на глаз».
+            Мы точно считаем.
+          </p>
+          <p class="description services__description">
+            Подробная, прозрачная смета
+            с реальными ценами и без сюрпризов,
+            чтобы вы заранее знали, за что платите!
+          </p>
+          <p class="description">
+            И помните, что с нами <span class="red-text">можно сэкономить до 30% на материалах.</span>
+          </p>
+        </div>
+        <div class="accordeon__right">
+          <img class="accordeon__img" src="../img/accordeon_img_2.png" alt="Картинка">
+          <span class="accordeon__pic">
+          </span>
+        </div>
+      </li>
+      <li class="accordeon__item js-accordeon-item">
+        <div class="accordeon__left">
+          <h3 class="title-h3 services__title-h3">Отделочные работы под ключ</h3>
+          <span class="accordeon__cost">[10 000 ₽]</span>
+        </div>
+        <div class="accordeon__middle">
+          <p class="description services__description">
+            Ремонт под ключ от <span class="red-text">YouHome</span>
+            — от голых стен до уюта, <span class="red-text">без головной боли.</span>
+          </p>
+
+          <p class="description services__description">Берём на себя всё: дизайн, закупки, работы, контроль. Вы просто
+            заезжаете в готовую
+            квартиру.</p>
+          <p class="description">
+            Честная смета, <span class="red-text">соблюдение сроков
+              и прозрачность</span> на каждом этапе.</p>
+        </div>
+        <div class="accordeon__right">
+          <img class="accordeon__img" src="../img/accordeon_img_3.png" alt="Картинка">
+          <span class="accordeon__pic">
+          </span>
+        </div>
+      </li>
+      <li class="accordeon__item js-accordeon-item">
+        <div class="accordeon__left">
+          <h3 class="title-h3 services__title-h3">Ремонт санузла под ключ</h3>
+          <span class="accordeon__cost">[30 000 ₽]</span>
+        </div>
+        <div class="accordeon__middle">
+          <p class="description services__description">Снимаем старое, ставим новое — <span class="red-text">красиво,
+              надолго и без грязи.</span></p>
+
+          <p class="description services__description">Поможем с планировкой и подберём материалы! Cтяжка пола,
+            вырaвниваниe cтeн пo мaякaм, пoдгoтовительные paбoты,
+            укладка плитки (кepамической и кeрaмогpaнитa), мoнтаж душевыx кабинeт, вaнн, джакузи, сантeхники. Paботaем
+            как
+            пo дизайн пpoекту, тaк и без.</p>
+
+          <p class="description services__description"><span class="red-text">Гармония, стиль и идеальная
+              гидроизоляция</span> — в вашей новой ванной.</p>
+        </div>
+        <div class="accordeon__right">
+          <img class="accordeon__img" src="../img/accordeon_img_4.png" alt="Картинка">
+          <span class="accordeon__pic">
+          </span>
+        </div>
+      </li>
+      <li class="accordeon__item js-accordeon-item">
+        <div class="accordeon__left">
+          <h3 class="title-h3 services__title-h3">Стены и перекрытия</h3>
+          <span class="accordeon__cost">[300 ₽/м²]</span>
+        </div>
+        <div class="accordeon__middle">
+          <p class="description services__description">Ремонт стен и перекрытий от<span class="red-text">YouHome —
+              крепкий фундамент уюта.</span></p>
+
+          <p class="description services__description"> Штукатурим, шпаклюем, выравниваем, усиливаем. Работаем с любыми
+            материалами и сложностями!</p>
+
+          <p class="description services__description"> <span class="red-text">Гладкие стены, прочные перекрытия
+              и никакой трещины</span> между вами
+            и качеством.</p>
+        </div>
+        <div class="accordeon__right">
+          <img class="accordeon__img" src="../img/accordeon_img_5.png" alt="Картинка">
+          <span class="accordeon__pic">
+          </span>
+        </div>
+      </li>
+      <li class="accordeon__item js-accordeon-item">
+        <div class="accordeon__left">
+          <h3 class="title-h3 services__title-h3">Ремонт потолков</h3>
+          <span class="accordeon__cost">[500 ₽/м²]</span>
+        </div>
+        <div class="accordeon__middle">
+          <p class="description services__description">Ремонт потолков от <span class="red-text">YouHome
+              — красота и надёжность</span> над головой! </p>
+
+          <p class="description services__description"> Выравниваем, монтируем, красим, устанавливаем натяжные
+            и гипсокартонные конструкции. Без трещин, пятен и перекосов — только <span class="red-text">идеально ровный
+              результат.</span></p>
+        </div>
+        <div class="accordeon__right">
+          <img class="accordeon__img" src="../img/accordeon_img_6.png" alt="Картинка">
+          <span class="accordeon__pic">
+          </span>
+        </div>
+      </li>
+      <li class="accordeon__item js-accordeon-item">
+        <div class="accordeon__left">
+          <h3 class="title-h3 services__title-h3">Напольное покрытие</h3>
+          <span class="accordeon__cost">[300 ₽/м²]</span>
+        </div>
+        <div class="accordeon__middle">
+          <p class="description services__description">Ремонт полов от <span class="red-text">YouHome — идеальное
+              основание</span> для вашего <span class="red-text">комфорта.</span></p>
+
+          <p class="description services__description">Выравнивание, шумоизоляция, укладка — от чернового до чистового.
+            Работаем с любыми покрытиями: ламинат,
+            плитка, паркет.</p>
+
+          <p class="description services__description"><span class="red-text">Ровно, надёжно и красиво</span> — как
+            и должно быть</p>
+        </div>
+        <div class="accordeon__right">
+          <img class="accordeon__img" src="../img/accordeon_img_7.png" alt="Картинка">
+          <span class="accordeon__pic">
+          </span>
+        </div>
+      </li>
+      <li class="accordeon__item js-accordeon-item">
+        <div class="accordeon__left">
+          <h3 class="title-h3 services__title-h3">Дизайн-проект</h3>
+          <span class="accordeon__cost">[1 500 ₽/м²]</span>
+        </div>
+        <div class="accordeon__middle">
+          <p class="description services__description">В <span class="red-text">YouHome</span> мы создаём <span
+              class="red-text">продуманный, практичный</span> дизайн.</p>
+
+          <p class="description services__description"> Каждый дизайн-проект — это чёткий план действий: эргономика,
+            стиль
+            и ваши пожелания, объединённые
+            в гармоничное пространство. Без лишнего, без догадок — только то, что действительно нужно.</p>
+
+          <p class="description">А главное — с нами вы <span class="red-text">можете сэкономить</span> до 30% за счёт
+            грамотных решений и выгодных подборов материалов.</p>
+        </div>
+        <div class="accordeon__right">
+          <img class="accordeon__img" src="../img/accordeon_img_8.png" alt="Картинка">
+          <span class="accordeon__pic">
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="examples js-examples-work">
+  <div class="container">
+    <h2 class="title-h2 examples__title-h2"><span class="red-text">Примеры</span><br> работ</h2>
+    <div class="swiper js-swiper-examples-work">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_1.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_2.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_3.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_4.png" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_5.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_6.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_7.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_8.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_9.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_10.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_11.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_12.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_13.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_14.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_15.jpg" alt="Картинка">
+        </div>
+        <div class="swiper-slide">
+          <img class="examples__img" src="../img/examples_img_16.jpg" alt="Картинка">
+        </div>
+      </div>
+    </div>
+    <div class="slider-buttons">
+      <button class="slider-buttons__button left js-swiper-button-prev">
+        <svg width="7" height="14" viewBox="0 0 7 14" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6.77781 12.8097C6.55028 13.1281 6.09135 13.166 5.81465 12.8893L0.632396 7.70705C0.241872 7.31652 0.241872 6.68336 0.632397 6.29283L5.96502 0.960209C6.1739 0.751332 6.51254 0.751288 6.72147 0.960112C6.92649 1.16503 6.93101 1.49596 6.73165 1.7064L2.38612 6.29334C2.01353 6.68664 2.02188 7.30511 2.40496 7.6882L6.71036 11.9936C6.92933 12.2126 6.95786 12.5578 6.77781 12.8097Z"
+            fill="#A7A7A7" />
+        </svg>
+      </button>
+      <button class="slider-buttons__button right js-swiper-button-next">
+        <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.222194 12.8097C0.44972 13.1281 0.908647 13.166 1.18535 12.8893L6.3676 7.70705C6.75813 7.31652 6.75813 6.68336 6.3676 6.29283L1.03498 0.960209C0.826104 0.751332 0.48746 0.751288 0.278531 0.960112C0.0735075 1.16503 0.0689942 1.49596 0.268353 1.7064L4.61388 6.29334C4.98647 6.68664 4.97812 7.30511 4.59504 7.6882L0.28964 11.9936C0.0706696 12.2126 0.0421415 12.5578 0.222194 12.8097Z"
+            fill="#A7A7A7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+      <section class="feedback js-feedback">
+  <div class="container feedback__container">
+    <h2 class="title-h2 feedback__title-h2"><span class="red-text">Оставьте заявку</span> — мы свяжемся
+      c вами и <span class="red-text">предложим лучшее решение</span> под ваш бюджет</h2>
+    <div class="feedback__left">
+      <form class="form js-form" action="#">
+        <label class="form__label js-label">
+          <span>Ваше имя и фамилия</span>
+          <input class="form__input js-input-name" type="text" name="name" placeholder="Иван Иванов">
+        </label>
+        <label class="form__label js-label">
+          <span>Номер телефона</span>
+          <input class="form__input js-input-tel" type="tel" name="tel" placeholder="+7 (___) ___-__-__">
+        </label>
+        <label class="form__label">
+          <span>E-mail</span>
+          <input class="form__input js-input-email" type="email" name="mail" placeholder="E-mail">
+        </label>
+        <label class="form__label">
+          <span>Комментарий</span>
+          <textarea class="form__input js-input-message" name="message"
+            placeholder="Комментарий [необязательно]"></textarea>
+        </label>
+        <label class="custom-checkbox">
+          <input type="checkbox" class="js-chek">
+          <span class="checkbox-icon"></span>
+          <span class="checkbox-text">Соглашаюсь на обработку персональных данных</span>
+        </label>
+        <button class="button button--red js-form-button">Офрмить заявку</button>
+      </form>
+    </div>
+    <button class="button-up feedback__button-up js-up"><span>ВВЕРХ</span>
+      <svg class="button-up__svg" width="18" height="10" viewBox="0 0 18 10" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M9.56075 0.236172L17.7861 8.72219C17.9234 8.86378 18 9.0519 18 9.24752C18 9.44314 17.9234 9.63126 17.7861 9.77285L17.7768 9.78199C17.7102 9.85087 17.6301 9.90571 17.5413 9.94319C17.4525 9.98067 17.3568 10 17.2602 10C17.1635 10 17.0679 9.98067 16.9791 9.94319C16.8903 9.90571 16.8102 9.85087 16.7436 9.78199L8.99845 1.79085L1.25641 9.78199C1.18984 9.85087 1.10972 9.90572 1.02091 9.94319C0.932097 9.98067 0.836459 10 0.739812 10C0.643163 10 0.547524 9.98067 0.458714 9.94319C0.369903 9.90572 0.289777 9.85087 0.22321 9.78199L0.213916 9.77285C0.0766019 9.63126 8.25546e-07 9.44314 8.08444e-07 9.24752C7.91342e-07 9.0519 0.0766018 8.86378 0.213916 8.72219L8.43925 0.236172C8.51159 0.161541 8.59859 0.102127 8.69498 0.0615303C8.79137 0.020934 8.89514 7.95972e-07 9 7.86805e-07C9.10487 7.77637e-07 9.20864 0.0209339 9.30503 0.0615303C9.40141 0.102127 9.48841 0.161541 9.56075 0.236172Z"
+          fill="#A7A7A7" />
+      </svg>
+    </button>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <nav class="nav footer__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link js-footer-nav-link" href="#" data-section="about">
+            о нас
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link js-footer-nav-link" href="#" data-section="our-services">
+            услуги
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link js-footer-nav-link" href="#" data-section="examples-work">
+            наши работы
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav footer__nav footer__nav--contacts">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="tel:+79131991719">
+            ТЕЛ. +7 (913) 199 17 19
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="tel:+79135593064">
+            ТЕЛ. +7 (913) 559-30-64
+          </a>
+        </li>
+        <li class="nav__item">
+          <p class="nav__adress">
+            Г. КРАСНОЯРСК, УЛ. МИРА, 45
+          </p>
+        </li>
+      </ul>
+    </nav>
+    <ul class="social">
+      <li class="social__item">
+        <a class="cocial__link" href="#">
+          <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12.5704 13.912H14.0256C14.0256 13.912 14.4621 13.838 14.6804 13.616C14.8986 13.394 14.8986 12.95 14.8986 12.95C14.8986 12.95 14.8986 11.026 15.7717 10.73C16.6448 10.434 17.8089 12.654 18.973 13.468C19.8461 14.134 20.5009 13.986 20.5009 13.986L23.7022 13.912C23.7022 13.912 25.3755 13.838 24.5752 12.432C24.5025 12.358 24.1387 11.47 22.1743 9.61999C20.1371 7.69599 20.4281 8.06599 22.8291 4.736C24.2842 2.738 24.8663 1.554 24.7207 0.961999C24.5752 0.443999 23.4839 0.591999 23.4839 0.591999H19.8461C19.8461 0.591999 19.555 0.517999 19.4095 0.665999C19.1913 0.813999 19.1185 1.036 19.1185 1.036C19.1185 1.036 18.5364 2.59 17.8089 3.922C16.2082 6.65999 15.5534 6.80799 15.3352 6.65999C14.7531 6.29 14.8986 5.032 14.8986 4.218C14.8986 1.554 15.3352 0.443999 14.0983 0.147999C13.7345 0.0739991 13.4435 0 12.4249 0C11.1153 0 10.024 -2.86698e-07 9.44191 0.295999C9.00537 0.517999 8.71435 0.961999 8.93262 0.961999C9.15089 0.961999 9.73294 1.11 10.024 1.48C10.315 2.146 10.315 3.256 10.315 3.256C10.315 3.256 10.5333 6.43799 9.80569 6.80799C9.2964 7.10399 8.64159 6.51199 7.18647 3.996C6.4589 2.738 5.87685 1.258 5.87685 1.258C5.87685 1.258 5.80409 0.962 5.58583 0.814C5.36756 0.666 5.00377 0.591999 5.00377 0.591999H1.58423C1.58423 0.591999 1.07493 0.592 0.856664 0.814C0.711152 1.036 0.856664 1.406 0.856664 1.406C0.856664 1.406 3.54865 7.76999 6.60441 11.026C9.44191 14.134 12.5704 13.912 12.5704 13.912Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="cocial__link" href="#">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.583 0C16.106 0 20.583 4.477 20.583 10C20.583 15.523 16.106 20 10.583 20C8.81578 20.003 7.07961 19.5353 5.55302 18.645L0.587023 20L1.93902 15.032C1.04798 13.5049 0.579926 11.768 0.583023 10C0.583023 4.477 5.06002 0 10.583 0ZM7.17502 5.3L6.97502 5.308C6.84571 5.31691 6.71937 5.35087 6.60302 5.408C6.4946 5.46951 6.39559 5.5463 6.30902 5.636C6.18902 5.749 6.12102 5.847 6.04802 5.942C5.67814 6.4229 5.479 7.01331 5.48202 7.62C5.48402 8.11 5.61202 8.587 5.81202 9.033C6.22102 9.935 6.89402 10.89 7.78202 11.775C7.99602 11.988 8.20602 12.202 8.43202 12.401C9.53546 13.3724 10.8503 14.073 12.272 14.447L12.84 14.534C13.025 14.544 13.21 14.53 13.396 14.521C13.6872 14.5056 13.9715 14.4268 14.229 14.29C14.3599 14.2223 14.4877 14.1489 14.612 14.07C14.612 14.07 14.6544 14.0413 14.737 13.98C14.872 13.88 14.955 13.809 15.067 13.692C15.151 13.6053 15.221 13.5047 15.277 13.39C15.355 13.227 15.433 12.916 15.465 12.657C15.489 12.459 15.482 12.351 15.479 12.284C15.475 12.177 15.386 12.066 15.289 12.019L14.707 11.758C14.707 11.758 13.837 11.379 13.305 11.137C13.2493 11.1128 13.1897 11.0989 13.129 11.096C13.0606 11.0888 12.9914 11.0965 12.9262 11.1184C12.861 11.1403 12.8012 11.176 12.751 11.223C12.746 11.221 12.679 11.278 11.956 12.154C11.9145 12.2098 11.8574 12.2519 11.7918 12.2751C11.7263 12.2982 11.6553 12.3013 11.588 12.284C11.5229 12.2666 11.459 12.2446 11.397 12.218C11.273 12.166 11.23 12.146 11.145 12.11C10.5709 11.8599 10.0395 11.5215 9.57002 11.107C9.44402 10.997 9.32702 10.877 9.20702 10.761C8.81363 10.3842 8.47077 9.95799 8.18702 9.493L8.12802 9.398C8.08629 9.3338 8.05206 9.26501 8.02602 9.193C7.98802 9.046 8.08702 8.928 8.08702 8.928C8.08702 8.928 8.33002 8.662 8.44302 8.518C8.55302 8.378 8.64602 8.242 8.70602 8.145C8.82402 7.955 8.86102 7.76 8.79902 7.609C8.51902 6.925 8.22969 6.24467 7.93102 5.568C7.87202 5.434 7.69702 5.338 7.53802 5.319C7.48402 5.31233 7.43002 5.307 7.37602 5.303C7.24175 5.2953 7.10711 5.29664 6.97302 5.307L7.17502 5.3Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="cocial__link" href="#">
+          <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.5501 0.366489C18.7972 0.262479 19.0677 0.226607 19.3334 0.262606C19.5991 0.298604 19.8502 0.405157 20.0608 0.571174C20.2713 0.737191 20.4335 0.956602 20.5305 1.20657C20.6274 1.45654 20.6556 1.72793 20.6121 1.99249L18.3441 15.7495C18.1241 17.0765 16.6681 17.8375 15.4511 17.1765C14.4331 16.6235 12.9211 15.7715 11.5611 14.8825C10.8811 14.4375 8.79809 13.0125 9.05409 11.9985C9.27409 11.1315 12.7741 7.87349 14.7741 5.93649C15.5591 5.17549 15.2011 4.73649 14.2741 5.43649C11.9721 7.17449 8.27609 9.81749 7.05409 10.5615C5.97609 11.2175 5.41409 11.3295 4.74209 11.2175C3.51609 11.0135 2.37909 10.6975 1.45109 10.3125C0.197091 9.79249 0.258091 8.06849 1.45009 7.56649L18.5501 0.366489Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <a class="logo footer__logo" href="#">
+      <img class="" src="../img/logo_footer_img.png" alt="Логотип сайта">
+    </a>
+  </div>
+</footer>
+  </div>
+  <script src="./swiper/swiper.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

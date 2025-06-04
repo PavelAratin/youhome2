@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: $IdealistFont;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  overflow-anchor: none;
+  color: $ColorCherny;
+  background-color: $ColorBelyy;
+}
+button {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
+input[type="text"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="text"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+textarea {
+  resize: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+.site-container {
+  overflow: hidden;
+}
+.title-h1 {
+  font-family: $UncageFont;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+}
+.title-h2 {
+  font-family: $UncageFont;
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: -0.01em;
+}
+.title-h3 {
+  font-family: $UncageFont;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+.red-text {
+  color: $ColorKrasnyy;
+}
+.description {
+  font-family: $IdealistFont;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.button {
+  font-family: $IdealistFont;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  color: $ColorKrasnyy;
+  padding: 17px 50px;
+  border: 1px solid $ColorKrasnyy;
+  transition: all 0.2s linear;
+  &:hover {
+    color: $ColorBelyy;
+    background-color: $ColorKrasnyy;
+  }
+  &--red {
+    color: $ColorBelyy;
+    background-color: $ColorKrasnyy;
+    &:hover {
+      color: $ColorKrasnyy;
+      background-color: $ColorBelyy;
+    }
+  }
+}
+.bg {
+  background-repeat: no-repeat;
+  &--hero {
+    background-image: url("../../img/hero_bg.png");
+    background-position: left 195px top;
+    background-size: contain;
+  }
+  &--relative {
+    position: relative;
+    height: 100vh;
+  }
+  &--about {
+    background-image: url("../img/about_bg.png");
+    background-position: right 231px top 4px; /* 100px от правого края */
+  }
+}
+.button-up {
+  border: none;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  color: $ColorSvetloServy;
+  position: relative;
+  transition: all 0.3s linear;
+  &__svg {
+    position: absolute;
+    right: -30px;
+    top: 6px;
+  }
+  &__svg path {
+    transition: all 0.3s linear;
+  }
+  &:hover {
+    color: $ColorKrasnyy;
+  }
+  &:hover &__svg path {
+    fill: $ColorKrasnyy;
+  }
+}

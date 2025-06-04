@@ -1,0 +1,62 @@
+.header {
+  padding: 30px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  animation: go 1.3s;
+  &__container {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+  }
+  .logo {
+    margin-right: 71px;
+  }
+}
+.burger {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../img/burger_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 0.3s linear;
+  display: none;
+  &:hover {
+    background-image: url("../../img/close_burger.png");
+  }
+}
+@keyframes go {
+  0% {
+    margin-top: -150px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 79px;
+  }
+  &__link {
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    transition: color 0.2s linear;
+    &:hover {
+      color: $ColorKrasnyy;
+    }
+  }
+}
+.mobile-menu {
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+}
+.mobile-menu.active-mobile-menu {
+  transform: translateX(0);
+}

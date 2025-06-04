@@ -1,0 +1,26 @@
+.hero {
+  padding: 240px 0 138px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    gap: 10px;
+  }
+  &__title {
+    margin-bottom: 19px;
+    max-width: 512px;
+    padding-top: 42px;
+  }
+  &__description {
+    margin-bottom: 59px;
+    max-width: 482px;
+  }
+  &__img {
+    max-width: 100%; /* Не будет шире родителя */
+    height: auto;
+  }
+  &__swiper {
+    max-width: 353px;
+    max-height: 535px;
+  }
+}
