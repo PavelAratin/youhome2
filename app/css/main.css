@@ -824,10 +824,32 @@ a {
     padding: 60px 0;
   }
   .footer__container {
+    /* Стандартное свойство */
+    display: grid;
+    /* Для IE 10-11 и старых Edge */
+    -ms-grid-columns: 1fr [auto-fit];
+    /* Для старых версий Safari, iOS Safari и Android Browser */
+    -webkit-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Стандартное свойство */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Для старых версий Safari, iOS Safari и Android Browser */
+    -webkit-gap: 20px;
+    /* Для Firefox */
+    -moz-gap: 20px;
+    /* Для IE 10-11 */
+    -ms-grid-gap: 20px;
+    /* Стандартное свойство */
     gap: 20px;
   }
   .footer__logo {
+    /* Для старых WebKit-браузеров (Safari, iOS Safari) */
+    -webkit-grid-column: span 2;
+    /* Для Firefox */
+    -moz-grid-column: span 2;
+    /* Для IE10-11 и старых Edge */
+    -ms-grid-column-span: 2;
+    /* Особый синтаксис для IE! */
+    /* Стандартное свойство */
     grid-column: span 2;
   }
 }
