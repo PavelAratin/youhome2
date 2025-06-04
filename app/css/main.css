@@ -444,9 +444,10 @@ a {
 }
 
 .slider-buttons {
+  /* Для старых версий Safari */
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
 }
 .slider-buttons__button {
   border: 1px solid #a7a7a7;
@@ -770,6 +771,7 @@ a {
   .bg--about {
     background-position: center bottom;
     background-size: contain;
+    padding-top: 80px;
   }
 
   .services__title-h2 {

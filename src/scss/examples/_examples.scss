@@ -12,9 +12,12 @@
   }
 }
 .slider-buttons {
+  display: -webkit-flex; /* Для старых версий Safari */
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
-  justify-self: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   &__button {
     border: 1px solid $ColorSvetloServy;
     border-radius: 100%;
