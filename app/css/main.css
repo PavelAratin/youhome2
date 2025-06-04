@@ -166,7 +166,7 @@ a {
   background-repeat: no-repeat;
 }
 .bg--hero {
-  background-image: url("../../img/hero_bg.png");
+  background-image: url("../img/hero_bg.png");
   background-position: left 195px top;
   background-size: contain;
 }
@@ -226,7 +226,7 @@ a {
   border: none;
   width: 40px;
   height: 40px;
-  background-image: url("../../img/burger_icon.png");
+  background-image: url("../img/burger_icon.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -234,7 +234,7 @@ a {
   display: none;
 }
 .burger:hover {
-  background-image: url("../../img/close_burger.png");
+  background-image: url("../img/close_burger.png");
 }
 
 @-webkit-keyframes go {
@@ -366,7 +366,7 @@ a {
   transition: all 0.2s linear;
 }
 .accordeon__item:hover .accordeon__pic {
-  background-image: url("../../img/arrow-down-red.png");
+  background-image: url("../img/arrow-down-red.png");
 }
 .accordeon__left {
   flex: 1 1 267px;
@@ -400,7 +400,7 @@ a {
   justify-content: center;
   width: 24px;
   height: 24px;
-  background-image: url("../../img/arrow_down.png");
+  background-image: url("../img/arrow_down.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -422,11 +422,11 @@ a {
 }
 
 .js-active-accordeon .accordeon__pic {
-  background-image: url("../../img/close.png");
+  background-image: url("../img/close.png");
 }
 
 .js-active-accordeon:hover .accordeon__pic {
-  background-image: url("../../img/close-red.png");
+  background-image: url("../img/close-red.png");
 }
 
 .examples {
@@ -484,7 +484,7 @@ a {
   padding-bottom: 130px;
 }
 .feedback__container {
-  background-image: url("../../img/form_img.png");
+  background-image: url("../img/form_img.png");
   background-repeat: no-repeat;
   background-position: right top 200px;
 }
@@ -573,7 +573,7 @@ a {
 
 /* Стиль при выборе */
 .custom-checkbox .js-chek:checked + .checkbox-icon {
-  background-image: url("../../img/checkbox.png");
+  background-image: url("../img/checkbox.png");
   background-position: center center;
   background-repeat: no-repeat;
 }
