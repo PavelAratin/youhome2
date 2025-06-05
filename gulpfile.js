@@ -42,7 +42,8 @@ const styles = () => {
     .pipe(sourcemaps.init())//начало отслеживание ошибок в разхных вайлах scss
     .pipe(sass().on('error', notify.onError()))
     .pipe(autoprefixer({
-      cascade: false
+      cascade: false,
+      overrideBrowserslist: ['last 5 versions']
     }))
     .pipe(sourcemaps.write('.')) //отслеживание ошибок в разхных вайлах scss
     .pipe(dest('./app/css'))
