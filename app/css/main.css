@@ -910,6 +910,7 @@ a {
 
   .bg--hero {
     background-position: center bottom 80px;
+    height: 800px;
   }
 
   .about {
