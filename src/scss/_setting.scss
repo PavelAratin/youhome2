@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  overscroll-behavior-y: contain;
+}
 body {
   font-family: $IdealistFont;
   font-weight: 300;

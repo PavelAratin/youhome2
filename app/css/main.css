@@ -18,6 +18,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overscroll-behavior-y: contain;
+}
+
 body {
   font-family: "idealist-sans-light", sans-serif;
   font-weight: 300;
