@@ -51,4 +51,13 @@ scrollToBlock({
 })
 
 //мобильное меню
-mobileMenu({ burgerButton: burgerButtonEl, mobileMenu: mobileMenuEl })
+mobileMenu({ burgerButton: burgerButtonEl, mobileMenu: mobileMenuEl });
+// Фикс для iOS Safari (поддержка 100vh)
+function setRealVh() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Инициализация и обработка ресайза
+setRealVh();
+window.addEventListener('resize', setRealVh);

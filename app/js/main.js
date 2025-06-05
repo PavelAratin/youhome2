@@ -428,7 +428,16 @@ var mobileMenuEl = document.querySelector('.js-mobile-menu');
 (0,_mobileMenu__WEBPACK_IMPORTED_MODULE_4__.mobileMenu)({
   burgerButton: burgerButtonEl,
   mobileMenu: mobileMenuEl
-});
+}); // Фикс для iOS Safari (поддержка 100vh)
+
+function setRealVh() {
+  var vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', "".concat(vh, "px"));
+} // Инициализация и обработка ресайза
+
+
+setRealVh();
+window.addEventListener('resize', setRealVh);
 })();
 
 /******/ })()
