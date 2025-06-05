@@ -1,10 +1,6 @@
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  overscroll-behavior-y: contain;
-}
 body {
   font-family: $IdealistFont;
   font-weight: 300;
@@ -81,6 +77,10 @@ a {
 }
 .site-container {
   overflow: hidden;
+  overscroll-behavior-y: none;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .title-h1 {
   font-family: $UncageFont;
@@ -148,6 +148,7 @@ a {
   &--relative {
     position: relative;
     height: 100vh;
+    min-height: -webkit-fill-available; /* Для современных Safari */
   }
   &--about {
     background-image: url("../img/about_bg.png");
