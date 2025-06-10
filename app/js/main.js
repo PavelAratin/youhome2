@@ -290,18 +290,40 @@ function swiper(swiperEl, swiperHeroEl) {
   if (swiperHeroEl) {
     new Swiper(swiperHeroEl, {
       direction: 'horizontal',
-      // loop: true,
-      // Автопрокрутка
       autoplay: {
-        delay: 2000 // Интервал между слайдами в миллисекундах (3 сек)
+        delay: 2000,
+        disableOnInteraction: false // продолжать автопрокрутку после ручного вмешательства
 
       },
-      // Скорость анимации
       speed: 1000,
-      // Длительность перехода в миллисекундах (0.8 сек)
-      // Эффект перехода (опционально)
-      effect: 'fade' // Также можно 'slide', 'cube', 'coverflow'
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true // добавляет плавное перекрытие слайдов
 
+      },
+      on: {
+        init: function init() {
+          // Инициализация opacity для первого слайда
+          var slides = this.slides;
+
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].style.opacity = 0;
+          }
+
+          slides[this.activeIndex].style.opacity = 1;
+        },
+        slideChangeTransitionStart: function slideChangeTransitionStart() {
+          // Управление opacity во время перехода
+          var slides = this.slides;
+
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].style.opacity = 0;
+            slides[i].style.transition = 'opacity 0.5s';
+          }
+
+          slides[this.activeIndex].style.opacity = 1;
+        }
+      }
     });
   }
 }

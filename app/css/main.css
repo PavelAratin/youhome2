@@ -155,7 +155,7 @@ a {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 .button {
@@ -248,6 +248,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  z-index: 2;
 }
 .header .logo {
   margin-right: 71px;
@@ -309,18 +310,25 @@ a {
 }
 
 .mobile-menu {
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 .mobile-menu.active-mobile-menu {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .hero {
@@ -417,16 +425,16 @@ a {
   max-height: 80px;
   overflow: hidden;
   position: relative;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
   cursor: pointer;
 }
 .accordeon__item:hover .title-h3 {
   color: #c92626;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 .accordeon__item:hover .accordeon__pic {
   background-image: url("../img/arrow-down-red.png");
@@ -442,9 +450,9 @@ a {
   flex: 1 1 265px;
   padding-right: 10px;
   opacity: 0;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 .accordeon__right {
   display: -webkit-box;
@@ -453,21 +461,21 @@ a {
 }
 .accordeon__img {
   opacity: 0;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
   max-width: 329px;
   height: 240px;
 }
 .accordeon__cost {
   font-weight: 300;
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: -0.01em;
   color: #a7a7a7;
   opacity: 0;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 .accordeon__pic {
   display: -webkit-box;
@@ -485,9 +493,9 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 .js-active-accordeon {
@@ -825,6 +833,10 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
   .title-h1,
 .title-h2 {
     font-size: 24px;
@@ -893,12 +905,16 @@ a {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+    width: 100%;
   }
   .hero__right {
     -webkit-box-ordinal-group: 1;
     -ms-flex-order: 0;
     order: 0;
     width: 100%;
+  }
+  .hero__swiper {
+    height: 400px;
   }
 
   .button {
@@ -933,6 +949,12 @@ a {
     flex-shrink: 0;
     width: 100%;
   }
+  .about__img {
+    width: 310px;
+    height: 530px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
 
   .bg--about {
     background-position: center bottom;
@@ -944,17 +966,13 @@ a {
     margin-bottom: 40px;
   }
 
-  .accordeon__item {
-    max-height: 100%;
-  }
-
-  .accordeon__cost,
-.accordeon__middle {
+  .accordeon__middle {
     opacity: 1;
   }
 
-  .accordeon__right {
-    display: none;
+  .accordeon__cost {
+    opacity: 0;
+    font-size: 16px;
   }
 
   .accordeon__left,
@@ -969,15 +987,27 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    border-top-color: #a7a7a7;
+    position: relative;
   }
 
   .accordeon__left {
     margin-bottom: 20px;
   }
 
+  .accordeon__right {
+    position: absolute;
+    right: 0;
+  }
+
+  .accordeon__img {
+    display: none;
+  }
+
   .services {
     padding-bottom: 80px;
+  }
+  .services__title-h3 {
+    font-size: 18px;
   }
 
   .examples {

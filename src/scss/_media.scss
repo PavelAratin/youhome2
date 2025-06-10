@@ -29,6 +29,9 @@
   }
 }
 @media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
   .title-h1,
   .title-h2 {
     font-size: 24px;
@@ -83,10 +86,15 @@
     }
     &__left {
       order: 1;
+      width: 100%;
     }
     &__right {
       order: 0;
       width: 100%;
+    }
+    &__swiper {
+      // width: 310px;
+      height: 400px;
     }
   }
   .button {
@@ -115,6 +123,11 @@
       flex-shrink: 0;
       width: 100%;
     }
+    &__img {
+      width: 310px;
+      height: 530px;
+      object-fit: cover;
+    }
   }
   .bg--about {
     background-position: center bottom;
@@ -124,29 +137,42 @@
   .services__title-h2 {
     margin-bottom: 40px;
   }
-  .accordeon__item {
-    max-height: 100%;
-  }
-  .accordeon__cost,
+  // .accordeon__item {
+  //   max-height: 100%;
+  // }
   .accordeon__middle {
     opacity: 1;
   }
-  .accordeon__right {
-    display: none;
+  .accordeon__cost {
+    opacity: 0;
+    font-size: 16px;
   }
+  // .accordeon__right {
+  //   display: none;
+  // }
   .accordeon__left,
   .accordeon__middle {
     flex: 0;
   }
   .accordeon__item {
     flex-direction: column;
-    border-top-color: $ColorSvetloServy;
+    position: relative;
   }
   .accordeon__left {
     margin-bottom: 20px;
   }
+  .accordeon__right {
+    position: absolute;
+    right: 0;
+  }
+  .accordeon__img {
+    display: none;
+  }
   .services {
     padding-bottom: 80px;
+    &__title-h3 {
+      font-size: 18px;
+    }
   }
   .examples {
     padding-top: 80px;
