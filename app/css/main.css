@@ -950,7 +950,6 @@ a {
     width: 100%;
   }
   .about__img {
-    width: 310px;
     height: 530px;
     -o-object-fit: cover;
     object-fit: cover;
@@ -1014,8 +1013,9 @@ a {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .examples__title {
+  .examples__title-h2 {
     margin-bottom: 40px;
+    text-align: right;
   }
   .examples .swiper {
     margin-bottom: 40px;
