@@ -871,7 +871,7 @@ a {
   .header .mobile-menu .nav {
     display: block;
     padding-top: 30px;
-    padding-left: 40px;
+    padding-left: 10px;
     padding-bottom: 40px;
   }
   .header .mobile-menu .nav__list {
@@ -1057,8 +1057,8 @@ a {
     grid-column: span 2;
   }
   .footer__logo img {
-    width: 100%;
-    height: auto;
+    width: 277px;
+    height: 204px;
   }
   .footer .social {
     -webkit-box-ordinal-group: 5;
