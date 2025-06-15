@@ -181,8 +181,8 @@ function mobileMenu(_ref) {
   var burgerButton = _ref.burgerButton,
       mobileMenu = _ref.mobileMenu;
   var icons = {
-    menuIcon: './img/burger_icon.png',
-    closeIcon: './img/close_burger.png'
+    menuIcon: './img/burger_icon.svg',
+    closeIcon: './img/burger_close.svg'
   };
   if (!burgerButton || !mobileMenu) return;
   burgerButton.addEventListener('click', function () {

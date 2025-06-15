@@ -24,16 +24,9 @@ const fonts = () => {
     .pipe(ttf2woff2())
     .pipe(dest('./app/fonts/'))
 }
-//функция для работы с свг-спрайтами
-const svgSprites = () => {
+//функция для простого копирования SVG файлов
+const svgToApp = () => {
   return src('./src/img/**.svg')
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: '../sprite.svg'
-        }
-      }
-    }))
     .pipe(dest('./app/img'))
 }
 //функция для scss
@@ -128,7 +121,7 @@ const watchFiles = () => {
   watch('./src/img/**.jpg', imgToApp);
   watch('./src/img/**.png', imgToApp);
   watch('./src/img/**.jpeg', imgToApp);
-  watch('./src/img/**.svg', svgSprites);
+  watch('./src/img/**.svg', svgToApp);
   watch('./src/fonts/**.ttf', fonts);
   watch('./src/js/**/*.js', scipts);
 }
@@ -143,7 +136,7 @@ exports.normalizeToApp = normalizeToApp;
 exports.swiperToApp = swiperToApp;
 
 //в дефолтном таске мы используем функции(вызываются первый раз перед вотчингом)
-exports.default = series(clean, parallel(htmlInclude, scipts, swiperToApp, fonts, imgToApp, svgSprites), styles, normalizeToApp, watchFiles);
+exports.default = series(clean, parallel(htmlInclude, scipts, swiperToApp, fonts, imgToApp, svgToApp), styles, normalizeToApp, watchFiles);
 //код для build-версии
 //функция для работы со скриптами
 const sciptsBuild = () => {
@@ -192,4 +185,4 @@ const tinypng = () => {
     .pipe(dest('./app/img'))
 }
 //dev-сборка
-exports.build = series(clean, parallel(htmlInclude, sciptsBuild, fonts, imgToApp, svgSprites), stylesBuild, tinypng);
+exports.build = series(clean, parallel(htmlInclude, sciptsBuild, fonts, imgToApp, svgToApp), stylesBuild, tinypng);

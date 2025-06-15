@@ -255,9 +255,9 @@ a {
 
 .burger {
   border: none;
-  width: 40px;
-  height: 40px;
-  background-image: url("../img/burger_icon.png");
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/burger_icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -267,7 +267,7 @@ a {
   display: none;
 }
 .burger:hover {
-  background-image: url("../img/close_burger.png");
+  background-image: url("../img/burger_close.svg");
 }
 
 @-webkit-keyframes go {
@@ -871,7 +871,7 @@ a {
   .header .mobile-menu .nav {
     display: block;
     padding-top: 30px;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-bottom: 40px;
   }
   .header .mobile-menu .nav__list {
@@ -886,7 +886,7 @@ a {
   }
 
   .hero {
-    padding: 85px 0 80px 0;
+    padding: 106px 0 80px 0;
   }
   .hero__container {
     -ms-flex-wrap: wrap;
@@ -895,7 +895,10 @@ a {
   }
   .hero__title {
     padding-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+  }
+  .hero__title br {
+    display: none;
   }
   .hero__description {
     margin-bottom: 40px;
@@ -937,6 +940,7 @@ a {
   .about__container {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    gap: 40px;
   }
   .about__left {
     -ms-flex-negative: 0;
@@ -1051,6 +1055,15 @@ a {
     /* Особый синтаксис для IE! */
     /* Стандартное свойство */
     grid-column: span 2;
+  }
+  .footer__logo img {
+    width: 100%;
+    height: auto;
+  }
+  .footer .social {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
   }
 }
 @media (max-width: 500px) {
