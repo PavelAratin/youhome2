@@ -832,6 +832,12 @@ a {
   }
 }
 @media (max-width: 768px) {
+  body {
+    background-image: url(../img/form_mobile_bg.png);
+    background-repeat: no-repeat;
+    background-position-y: 5000px;
+  }
+
   .container {
     padding: 0 10px;
   }
