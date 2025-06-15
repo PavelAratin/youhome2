@@ -226,3 +226,12 @@
     }
   }
 }
+@media (max-width: 500px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__nav {
+    align-self: auto;
+  }
+}
